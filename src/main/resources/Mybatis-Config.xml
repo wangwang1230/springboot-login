@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<properties resource="database.properties" />
+	<settings>
+		<!-- 配置mybatis的日志输出设置为log4j -->
+		<setting name="logImpl" value="LOG4J"/>
+	</settings>
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${driver}" />
+				<property name="url" value="${url}" />
+				<property name="username" value="${username}" />
+				<property name="password" value="${password}" />
+			</dataSource>
+		</environment>
+	</environments>
+	<!--autogenerate 实体映射文件 -->
+	<mappers>
+		<mapper resource="sqlmap/hstdauto/pj_fa_payment_advice_SqlMap.xml" />
+		<mapper resource="sqlmap/hstdauto/pj_fa_receipt_advice_SqlMap.xml" />
+	</mappers>
+</configuration>
+
