@@ -1,33 +1,34 @@
-/**
- * 
- */
+
 package com.hstd.exchange.tradesrv;
 
 import org.apache.log4j.PropertyConfigurator;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @ClassName: HstdYpjSrv
  * @author: wh
- * @date: 2018ƒÍ5‘¬14»’
- * @Description: springboot∆Ù∂Ø¿‡
+ * @date: 2018Âπ¥5Êúà14Êó•
+ * @Description: springbootÂêØÂä®Á±ª
  */
 @SpringBootApplication
-@EnableAutoConfiguration
+//@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+@MapperScan("sqlmap.hstdauto")
+@ComponentScan({"com.hstd.exchange.entity.web"})
 public class HstdTradeSrv {
-	/*static {
+	static {
 		try {
-			// ≥ı ºªØlog4j
+			// ÂàùÂßãÂåñlog4j
 			String log4jPath = HstdTradeSrv.class.getClassLoader().getResource("").getPath() + "/log4j.properties";
-			System.out.println("≥ı ºªØlog4j°£°£°£°£");
+			System.out.println("ÂàùÂßãÂåñlog4j„ÄÇ„ÄÇ„ÄÇ„ÄÇ");
 			System.out.println("path is "+log4jPath);
 			PropertyConfigurator.configure(log4jPath);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}*/
+	}
 
 	public static void main(String args[]) {
 		SpringApplication.run(HstdTradeSrv.class, args);

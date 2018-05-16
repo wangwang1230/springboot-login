@@ -6,7 +6,7 @@
 		<!-- 配置mybatis的日志输出设置为log4j -->
 		<setting name="logImpl" value="LOG4J"/>
 	</settings>
-	<environments default="development">
+<!-- 	<environments default="development">
 		<environment id="development">
 			<transactionManager type="JDBC" />
 			<dataSource type="POOLED">
@@ -16,11 +16,10 @@
 				<property name="password" value="${password}" />
 			</dataSource>
 		</environment>
-	</environments>
-	<!--autogenerate 实体映射文件 -->
+	</environments> -->
+	<!--autogenerate 实体映射文件 ,如果在application.yml中配置了mapper这里就不需要再配置了 -->
 	<mappers>
-		<mapper resource="sqlmap/hstdauto/pj_fa_payment_advice_SqlMap.xml" />
-		<mapper resource="sqlmap/hstdauto/pj_fa_receipt_advice_SqlMap.xml" />
+		<mapper resource="sqlmap/hstdauto/AssociatorMapper.xml" />
 	</mappers>
 </configuration>
 

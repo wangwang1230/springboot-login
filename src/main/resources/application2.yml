@@ -1,0 +1,44 @@
+#标签的冒号后面必须有空格
+server: 
+  port: 8085
+#  tomcat:
+#    uri-encoding: UTF-8
+#  session:
+#    timeout:
+ 
+spring:
+
+  #开发环境
+  profiles:
+    active: application_dev
+#html解析
+  thymeleaf: 
+    prefix: classpath:/templates/
+
+# jsp
+#  mvc:
+#   view:
+#     prefix: /WEB-INF/ # 页面默认前缀目录
+#     suffix: .jsp # 响应页面默认后缀
+
+#热部署
+#  devtools:
+#    restart:
+#      enabled: true #热部署生效
+#      #设置重启的目录
+#      additional-paths: src/main/java
+#      exclude: WEB-INF/** #classpath目录下的WEB-INF文件夹内容修改不重启    
+
+# spring mvc 视图解析器
+  mvc:
+    view:
+      prefix: /WEB-INF/views
+      suffix: .jsp  
+   
+#生产环境    
+#  profiles:
+#    active: prod
+
+mybatis:
+  config-location: classpath:/Mybatis-Config.xml
+  mapper-locations: classpath:sqlmap/hstdauto/*.xml

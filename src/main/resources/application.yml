@@ -1,0 +1,24 @@
+server:
+  port: 8085
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc\:oracle\:thin\:@10.1.1.181\:1521\:ora11
+    username: hstd
+    password: hstd
+    max-active: 50
+    max-idle: 5
+    min-idle: 0
+  thymeleaf:
+    prefix: classpath:/templates/
+    mode: HTML5
+    encoding: UTF-8
+    #开发时关闭缓存,不然没法看到实时页面
+    cache: false 
+  mvc:
+    view:
+      prefix: /WEB-INF/views
+      suffix: .jsp
+mybatis:
+  config-location: classpath:/Mybatis-Config.xml
+#  mapper-locations: classpath:sqlmap/hstdauto/*.xml
