@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.hstd.exchange.entity.model.Associator;
-import com.util.MybatisUtil;
+import com.utils.MybatisUtil;
 
 /**
  * @author wh

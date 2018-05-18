@@ -20,4 +20,6 @@ public interface IAssociatorMgr {
 	 */
 	public void associatorRegister(Associator associator) throws Exception;
 	
+	public Associator getAssociator(long id) throws Exception; 
+	public Associator getAssociator(String id) throws Exception; 
 }

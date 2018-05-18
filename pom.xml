@@ -24,5 +24,10 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<optional>true</optional>
 		</dependency>
+		<dependency>
+			<groupId>com.fkcore</groupId> <!--自定义 -->
+			<artifactId>fkcore</artifactId> <!--自定义 -->
+			<version>1.0</version> <!--自定义 -->
+		</dependency>
 	</dependencies>
 </project>

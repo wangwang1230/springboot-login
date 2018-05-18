@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 import com.ibatis2mybaits.adpter.SqlMapClientAdapter;
-import com.util.MybatisUtil;
+import com.utils.MybatisUtil;
 
 /**
  * @author wh 自定义SqlMapClient类，适配mybatis的sqlSession及对应方法，以适应项目中原有dao方法的使用
