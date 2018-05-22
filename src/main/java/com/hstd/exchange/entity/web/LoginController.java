@@ -45,8 +45,4 @@ public class LoginController {
 		return "/register";
 	}
 
-	@RequestMapping()
-	public String login(){
-		return "/login";
-	}
 }

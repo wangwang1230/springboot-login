@@ -3,10 +3,9 @@
  */
 package com.hstd.exchange.entity.business.impl;
 
-import java.util.List;
-import java.util.Map;
-
 import com.hstd.exchange.entity.model.Associator;
+import com.response.Response;
+
 /**
  * @author hc
  * 
@@ -14,12 +13,16 @@ import com.hstd.exchange.entity.model.Associator;
 public interface IAssociatorMgr {
 	/**
 	 * 会员注册
+	 * 
 	 * @param associator
 	 * @return 影响的行数
 	 * @throws Exception
 	 */
-	public void associatorRegister(Associator associator) throws Exception;
-	
-	public Associator getAssociator(long id) throws Exception; 
-	public Associator getAssociator(String id) throws Exception; 
+	public Response associatorRegister(Associator associator) throws Exception;
+
+	public Response associatorLogin(String accNo, String password) throws Exception;
+
+	public Associator getAssociator(long id) throws Exception;
+
+	public Response getAssociator(String accNO) throws Exception;
 }

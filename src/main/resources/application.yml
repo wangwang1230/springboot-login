@@ -9,11 +9,11 @@ spring:
     max-active: 50
     max-idle: 5
     min-idle: 0
-  thymeleaf:
-    prefix: classpath:/templates/
-    mode: HTML5
-    encoding: UTF-8
-    #开发时关闭缓存,不然没法看到实时页面
+#  thymeleaf:
+#    prefix: classpath:/templates/
+#    mode: HTML5
+#    encoding: UTF-8
+#    #开发时关闭缓存,不然没法看到实时页面
     cache: false 
   mvc:
     view:

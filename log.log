@@ -1,2 +1,16 @@
 [INFO ]-[2018-05-16 09:38:39]-[org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 6.0.9.Final
 [INFO ]-[2018-05-16 09:40:54]-[org.hibernate.validator.internal.util.Version:21]: HV000001: Hibernate Validator 6.0.9.Final
+[INFO ]-[2018-05-22 10:52:40]-[com.hstd.exchange.entity.business.impl.AssociatorMgrImpl:148]: luke001-登录-时间-2018-05-22 :10:52:40
+[INFO ]-[2018-05-22 11:00:38]-[com.hstd.exchange.entity.business.impl.AssociatorMgrImpl:148]: luke001-登录-时间-2018-05-22 :11:00:38
+[INFO ]-[2018-05-22 11:23:48]-[com.hstd.exchange.entity.business.impl.AssociatorMgrImpl:148]: luke001-登录-时间-2018-05-22 :11:23:48
+[INFO ]-[2018-05-22 11:41:26]-[com.hstd.exchange.entity.business.impl.AssociatorMgrImpl:64]: com.response.Response@45686fdc
+[INFO ]-[2018-05-22 11:45:26]-[com.hstd.exchange.entity.business.impl.AssociatorMgrImpl:64]: com.response.Response@45686fdc
+[INFO ]-[2018-05-22 12:24:28]-[com.hstd.exchange.entity.business.impl.AssociatorMgrImpl:52]: C|该账号已经被注册！
+[INFO ]-[2018-05-22 12:24:31]-[com.hstd.exchange.entity.business.impl.AssociatorMgrImpl:52]: C|该账号已经被注册！
+[INFO ]-[2018-05-22 12:25:34]-[com.hstd.exchange.entity.business.impl.AssociatorMgrImpl:52]: C|该账号已经被注册！
+[INFO ]-[2018-05-22 12:25:47]-[com.hstd.exchange.entity.business.impl.AssociatorMgrImpl:52]: C|该账号已经被注册！
+[INFO ]-[2018-05-22 12:28:52]-[com.hstd.exchange.entity.business.impl.AssociatorMgrImpl:52]: C|该账号已经被注册！
+[INFO ]-[2018-05-22 12:29:30]-[com.hstd.exchange.entity.business.impl.AssociatorMgrImpl:52]: C|该账号已经被注册！
+[INFO ]-[2018-05-22 12:29:43]-[com.hstd.exchange.entity.business.impl.AssociatorMgrImpl:56]: C|请输入正确的手机号！
+[INFO ]-[2018-05-22 12:37:52]-[com.hstd.exchange.entity.business.impl.AssociatorMgrImpl:151]: luke001-登录-时间-2018-05-22 :12:37:52
+[INFO ]-[2018-05-22 12:38:29]-[com.hstd.exchange.entity.business.impl.AssociatorMgrImpl:151]: test003-登录-时间-2018-05-22 :12:38:29
