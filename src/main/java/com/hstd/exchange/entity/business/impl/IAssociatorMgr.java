@@ -1,6 +1,3 @@
-/**
- * 价差组合接口
- */
 package com.hstd.exchange.entity.business.impl;
 
 import com.hstd.exchange.entity.model.Associator;
