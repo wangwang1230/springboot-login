@@ -15,8 +15,7 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @SpringBootApplication
 //@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
-@MapperScan("sqlmap.hstdauto")
-@ComponentScan({"com.hstd.exchange.entity.web"})
+@MapperScan("sqlmap.hstdauto") 
 public class HstdTradeSrv {
 	static {
 		try {

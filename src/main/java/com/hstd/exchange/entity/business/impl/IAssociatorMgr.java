@@ -19,7 +19,7 @@ public interface IAssociatorMgr {
 
 	public Response associatorLogin(String accNo, String password) throws Exception;
 
-	public Associator getAssociator(long id) throws Exception;
+	public Response getAssociator(long id) throws Exception;
 
 	public Response getAssociator(String accNO) throws Exception;
 }

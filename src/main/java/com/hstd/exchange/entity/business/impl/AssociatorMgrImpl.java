@@ -123,11 +123,14 @@ public class AssociatorMgrImpl implements IAssociatorMgr {
 	}
 
 	@Override
-	public Associator getAssociator(long id) throws Exception {
+	public Response getAssociator(long id) throws Exception {
 		AssociatorKey key = new AssociatorKey();
 		key.setId(id);
 		Associator associator = associatorMapper.selectByPrimaryKey(key);
-		return associator;
+		if (associator==null) {
+			return response.failure("你要查询的用户不存在，请检查id是否正确");
+		}
+		return response.success(associator);
 	}
 
 	@Override
