@@ -47,7 +47,7 @@ public class AdminController {
 	 */
 	@ApiOperation(value = "获取用户详细信息", notes = "根据url账号获取用户详细信息")
 	@ApiImplicitParam(name = "accNo", value = "用户账号", required = true, dataType = "String", paramType = "path")
-	@RequestMapping(value = "/accNo/{accNo}", method = RequestMethod.POST)
+	@RequestMapping(value = "/accNo/{accNo}", method = RequestMethod.GET)
 	public Response getUserByAccNo(@PathVariable String accNo) throws Exception {
 		return associatorMgrImpl.getAssociator(accNo);
 	}

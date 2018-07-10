@@ -6,9 +6,6 @@ spring:
     url: jdbc\:oracle\:thin\:@10.1.1.181\:1521\:ora11
     username: hstd
     password: hstd
-    max-active: 50
-    max-idle: 5
-    min-idle: 0
 #  thymeleaf:
 #    prefix: classpath:/templates/
 #    mode: HTML5
